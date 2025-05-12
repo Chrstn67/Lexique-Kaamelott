@@ -1,0 +1,101 @@
+.search-container {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 30px;
+
+  & .search-direction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+    & span {
+      font-size: 1.1rem;
+      padding: 0 15px;
+
+      &.highlighted {
+        color: var(--color-secondary);
+        font-weight: bold;
+      }
+
+      &.dimmed {
+        color: var(--color-text-light);
+      }
+    }
+
+    & .direction-toggle {
+      background-color: var(--color-primary);
+      color: var(--color-text);
+      border: 1px solid var(--color-secondary);
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        background-color: var(--color-primary-dark);
+      }
+    }
+  }
+
+  & .search-input-container {
+    display: flex;
+    gap: 10px;
+
+    & .search-input {
+      flex: 1;
+      padding: 12px 15px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      font-size: 1rem;
+      background-color: #231f1c; /* Légèrement plus clair que le fond */
+      color: var(--color-text);
+
+      &:focus {
+        outline: none;
+        border-color: var(--color-primary);
+      }
+    }
+
+    & .search-button {
+      background-color: var(--color-primary);
+      color: var(--color-text);
+      border: 1px solid var(--color-secondary);
+      border-radius: var(--border-radius);
+      padding: 0 20px;
+      font-family: var(--font-heading);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: var(--color-primary-dark);
+      }
+    }
+  }
+}
+
+.search-container .search-button {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.search-container .direction-toggle {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border: 1px solid var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+  .search-input-container {
+    flex-direction: column;
+  }
+}

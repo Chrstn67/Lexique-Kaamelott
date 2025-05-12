@@ -1,0 +1,38 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  & button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: var(--color-secondary);
+    }
+
+    &.active {
+      color: var(--color-secondary);
+      border-bottom: 3px solid var(--color-primary);
+    }
+  }
+}
+
+.tabs button.active {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+@media (max-width: 480px) {
+  .tabs button {
+    padding: 8px 15px;
+    font-size: 1rem;
+  }
+}
