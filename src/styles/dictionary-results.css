@@ -137,6 +137,46 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
   }
+
+  & .site-link {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    border: 2px solid var(--color-secondary);
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+
+    &::before,
+    &::after {
+      content: "★";
+      display: inline-block;
+      margin: 0 8px;
+      font-size: 0.8rem;
+      vertical-align: middle;
+      color: var(--color-primary);
+    }
+
+    &:hover {
+      background-color: rgba(var(--color-primary-rgb), 0.2);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  }
 }
 
 @media (max-width: 768px) {

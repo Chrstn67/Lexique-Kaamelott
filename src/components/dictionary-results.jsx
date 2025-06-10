@@ -42,6 +42,13 @@ export default function DictionaryResults({
   if (sortedData.length === 0 && searchTerm) {
     return (
       <div className="no-results">
+        <a
+          href="https://www.missabrevis.com/glossaire//"
+          className="site-link"
+          target="_blank"
+        >
+          Pas moyen de piger un broc de ce qu'il dit...
+        </a>
         <p>Aucun résultat trouvé pour "{searchTerm}"</p>
         <p className="quote">« Bon bah il faut tout recommencer. »</p>
         <p className="quote">

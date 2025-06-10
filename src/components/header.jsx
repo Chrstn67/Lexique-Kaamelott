@@ -16,6 +16,7 @@ export default function Header() {
       >
         Tous les dialogues de Kaamelott Livres I - VI
       </a>
+
       <div className="medieval-decoration"></div>
     </header>
   );

@@ -8,6 +8,7 @@ export default function SearchBar({
   isReversed,
   onToggleDirection,
   searchTerm,
+  onResetSearch,
 }) {
   const [inputValue, setInputValue] = useState(searchTerm || "");
 
@@ -18,7 +19,24 @@ export default function SearchBar({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSearch(inputValue);
+    if (inputValue.trim()) {
+      onSearch(inputValue.trim());
+    }
+  };
+
+  const handleReset = () => {
+    setInputValue("");
+    onResetSearch();
+  };
+
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    setInputValue(value);
+
+    // Si l'utilisateur vide le champ manuellement, réinitialiser aussi la recherche
+    if (value === "") {
+      onResetSearch();
+    }
   };
 
   return (
@@ -45,7 +63,7 @@ export default function SearchBar({
           <input
             type="text"
             value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
+            onChange={handleInputChange}
             placeholder={
               isReversed
                 ? "Rechercher en français..."
@@ -53,6 +71,16 @@ export default function SearchBar({
             }
             className="search-input"
           />
+          {inputValue && (
+            <button
+              type="button"
+              className="reset-button"
+              onClick={handleReset}
+              aria-label="Réinitialiser la recherche"
+            >
+              ✕
+            </button>
+          )}
           <button type="submit" className="search-button">
             Rechercher
           </button>

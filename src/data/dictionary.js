@@ -544,7 +544,7 @@ export const dictionaryData = [
 
   {
     kaamelott: "Cagaude",
-    french: [""],
+    french: ["Femme stupide"],
     definition: "Femme stupide et sans manières",
     example:
       "Par contre c'est des cagaudes hein, faut pas leur demander de compter jusqu'à dix.",
@@ -620,7 +620,7 @@ export const dictionaryData = [
 
   {
     kaamelott: "Vacherie",
-    french: [""],
+    french: ["Horreur"],
     definition: "Chose pénible, désagréable",
     example:
       "Mettez-moi ça à cramer dans la cheminée, vous serez gentil ! Je veux plus la voir, cette vacherie !",
@@ -663,7 +663,7 @@ export const dictionaryData = [
 
   {
     kaamelott: "Picrate",
-    french: [""],
+    french: ["Vin"],
     definition: "Vin de très mauvaise qualité",
     example:
       "Mais bon Dieu, ça fait trois fois que je la vide, elle est toujours pleine ! En plus il est épais, ce picrate... j'ai l'impression d'avaler de la pâte à crêpes...",
@@ -740,8 +740,8 @@ export const dictionaryData = [
 
   {
     kaamelott: "Pignouf",
-    french: [""],
-    definition: "",
+    french: ["Goujat"],
+    definition: "Individu grossier",
     example:
       "Ben... pignouf ! Bon, alors et nous ? Qu'est-ce qu'on fait ? On traite ou on se fâche ?",
     character: "Séli",
@@ -871,111 +871,108 @@ export const dictionaryData = [
     character: "Arthur",
   },
 
-  // {
-  //   kaamelott: "",
-  //   french: [""],
-  //   definition: "",
-  //   example:
-  //     "",
-  //   character: "",
-  // },
-  // {
-  //   kaamelott: "",
-  //   french: [""],
-  //   definition: "",
-  //   example:
-  //     "",
-  //   character: "",
-  // },
+  {
+    kaamelott: "Bidoche",
+    french: ["Viande"],
+    definition: "",
+    example:
+      "On arrive là-dedans, ils venaient de tuer l'agneau. Y avait une bonne odeur de bidoche grillée dans la salle !",
+    character: "Perceval",
+  },
+  {
+    kaamelott: "Biter",
+    french: ["Comprendre"],
+    definition: "",
+    example:
+      "Ah non mais un débile peut-être, mais moi je sens que je vais rien biter, et qu'on va finir par jouer à que dalle parce qu'il sera trois heures du matin...",
+    character: "Le tavernier",
+  },
 
-  // {
-  //   kaamelott: "",
-  //   french: [""],
-  //   definition: "",
-  //   example:
-  //     "",
-  //   character: "",
-  // },
+  {
+    kaamelott: "Paner",
+    french: ["Comprendre"],
+    definition: "",
+    example: "C'est pour ça que je pane rien aux livres, moi !",
+    character: "Perceval",
+  },
 
-  // {
-  //   kaamelott: "",
-  //   french: [""],
-  //   definition: "",
-  //   example:
-  //     "",
-  //   character: "",
-  // },
+  {
+    kaamelott: "Bectance",
+    french: ["Nourriture"],
+    definition: "",
+    example:
+      "Surveiller que personne ne vienne nuitamment pirater la bectance.",
+    character: "Séli",
+  },
 
-  // {
-  //   kaamelott: "",
-  //   french: [""],
-  //   definition: "",
-  //   example:
-  //     "",
-  //   character: "",
-  // },
+  {
+    kaamelott: "Arpion",
+    french: ["Pied"],
+    definition: "",
+    example:
+      "Mais arrêtez de discuter, levez-moi ce machin, et tâchez de pas me le lâcher sur les arpions.",
+    character: "Le jurisconsulte",
+  },
 
-  // {
-  //   kaamelott: "",
-  //   french: [""],
-  //   definition: "",
-  //   example:
-  //     "",
-  //   character: "",
-  // },
+  {
+    kaamelott: "Guez",
+    french: ["Maigre"],
+    definition: "",
+    example: "Un vieux moisi tout guez à poil dans la neige !",
+    character: "Yvain",
+  },
 
-  // {
-  //   kaamelott: "",
-  //   french: [""],
-  //   definition: "",
-  //   example:
-  //     "",
-  //   character: "",
-  // },
+  {
+    kaamelott: "Schproum",
+    french: ["Tapage", "Scandale"],
+    definition: "",
+    example:
+      "Ouais... ouais mais si y en a un qui fait du schproum, ça va partir en marave générale, et je suis claqué.",
+    character: "Karadoc",
+  },
 
-  // {
-  //   kaamelott: "",
-  //   french: [""],
-  //   definition: "",
-  //   example:
-  //     "",
-  //   character: "",
-  // },
+  {
+    kaamelott: "Soupière",
+    french: ["Tête"],
+    definition: "",
+    example:
+      "Ils ont bien de la chance que les chefs d'État se cassent la soupière pour les sortir de leur bouse quotidienne !",
+    character: "Le maître d'armes",
+  },
 
-  // {
-  //   kaamelott: "",
-  //   french: [""],
-  //   definition: "",
-  //   example:
-  //     "",
-  //   character: "",
-  // },
-  // {
-  //   kaamelott: "",
-  //   french: [""],
-  //   definition: "",
-  //   example:
-  //     "",
-  //   character: "",
-  // },
+  {
+    kaamelott: "Bouilloire",
+    french: ["Tête"],
+    definition: "",
+    example:
+      "Ça fait trois semaines qu'on se creuse la bouilloire à trouver un concept, avec le jambon, le pain, le fromage !",
+    character: "Roparzh",
+  },
+  {
+    kaamelott: "Lambiner",
+    french: ["Traîner"],
+    definition: "",
+    example: "Bon allez, allez, c'est pas le jour de lambiner !",
+    character: "Mevanwi",
+  },
 
-  // {
-  //   kaamelott: "",
-  //   french: [""],
-  //   definition: "",
-  //   example:
-  //     "",
-  //   character: "",
-  // },
+  {
+    kaamelott: "Esgourdes",
+    french: ["Oreilles"],
+    definition: "",
+    example:
+      "Moi ça me bousille les esgourdes, les sixtes, je suis déjà à moitié sourd !",
+    character: "Père Blaise",
+  },
 
-  // {
-  //   kaamelott: "",
-  //   french: [""],
-  //   definition: "",
-  //   example:
-  //     "",
-  //   character: "",
-  // },
+  {
+    kaamelott: "Échauguettes",
+    french: ["Oreilles"],
+    definition: "",
+    example:
+      "Bon bah allez, on démarre. Et ouvrez les échauguettes, hein ! J'ai pas envie de répéter.",
+    character: "Arthur",
+  },
 
   // {
   //   kaamelott: "",

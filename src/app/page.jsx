@@ -21,32 +21,13 @@ export default function Home() {
     setIsReversed(!isReversed);
   };
 
-  const resetSearch = () => {
-    setSearchTerm("");
-  };
-
   const handleResetSearch = () => {
-    setSearchTerm(""); // Ceci réinitialisera également la SearchBar grâce au useEffect
+    setSearchTerm(""); // Réinitialise le terme de recherche pour afficher tous les mots
   };
 
   return (
     <main>
       <Header />
-
-      <div className="tabs">
-        {/* <button
-          className={activeTab === "dictionary" ? "active" : ""}
-          onClick={() => setActiveTab("dictionary")}
-        >
-          Dictionnaire
-        </button> */}
-        {/* <button
-          className={activeTab === "translator" ? "active" : ""}
-          onClick={() => setActiveTab("translator")}
-        >
-          Traducteur
-        </button> */}
-      </div>
 
       {activeTab === "dictionary" ? (
         <>
@@ -55,6 +36,7 @@ export default function Home() {
             isReversed={isReversed}
             onToggleDirection={handleToggleDirection}
             searchTerm={searchTerm}
+            onResetSearch={handleResetSearch}
           />
           <DictionaryResults
             data={dictionaryData}
@@ -64,9 +46,7 @@ export default function Home() {
           />
         </>
       ) : (
-        {
-          /* <Translator dictionaryData={dictionaryData} /> */
-        }
+        <>{/* <Translator dictionaryData={dictionaryData} /> */}</>
       )}
     </main>
   );
